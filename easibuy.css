@@ -1,0 +1,52 @@
+:root{
+
+    /* COLOR */
+
+--primary-color: #ff6b6b;
+--secondary-color: #794afa;
+--secondary-dark-color: #453c5c;
+
+--white-color:#ffffff;
+--light-bg-color: #f2f3f5;
+--light-text-color: #7c899a;
+--border-color:#e5e8ec;
+--dark-color: #0a021c;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*    HEADER MAIN  */
+
+.top-header,.logo-list,.header-bottom{
+    display: none;
+    overflow: hidden;
+
+}
+
+.Desktop-section{
+    display: flex;
+    padding-inline: 10px;
+    margin: 10px;
+    background-color: var(--white-color);
+    justify-content: space-between;
+}
+.Desktop-section .menu-btn{
+    font-size: 20px;
+}
+
+.Desktop-section .logo h2{
+    font-size: 20px;
+    margin-left: 2rem;
+}
+
+.desktop-navigation-menu{
+    border-bottom: 1px solid var(--border-color); 
+    background-color: var(--light-bg-color);
+    margin-top: 0;
+}
+
