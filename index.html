@@ -7,8 +7,14 @@
 <meta name="viewport" content="width = device-width, initial-scale=1.0">
 <title>EasiBuy E-commerce</title>
 
-    <!-- CSS LINK -->
+       <!-- CSS LINK -->
 <link rel="stylesheet" href="easibuy.css">
+
+        <!-- swiper link -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
 
         <!-- FONT FAMILY -->
@@ -19,14 +25,74 @@
 </head>
 
 <body>
+  
+              <!-- ASIDE -->
 
+    <aside class="menu-display">
+
+               <div class="aside-items">
+
+                 <div class="aside-wrapper">
+
+                    <div class="aside-header">
+
+                       <div class="aside-logo">
+                           <h2>EasiBuy</h2>
+                           <ion-icon class="close-menu" name="close"></ion-icon>
+                       </div>
+                       
+                    </div>
+
+                    <div class="aside-flex-item">
+
+                        <div class="dept-part"></div>
+                        <div class="header-flex-items-part"></div>
+                        <div class="headertop-part"></div>
+
+                    </div>
+
+                 </div>
+
+               </div>
+               
+    </aside>
+
+    <div class="cart-sidebar">
+
+        <div class="cart-section">
+
+            <div class="cart-list">
+
+                <div class="head">
+                    <p>My Cart</p>
+                    <p class="close-cart"><ion-icon name="close"></ion-icon></p> 
+                </div>
+
+                <div class="cart-product">
+                     <div id="cartItem">
+                        your cart is empty
+                    </div>
+                </div>
+
+                <div class="foot">
+                    <h4>total:</h4>
+                    <h4 id="total"> $0.00</h4>
+                </div>
+              
+             </div>
+                
+        </div>
+
+    </div>   
+
+
+    <div class="body-elements">
+                          
     <header>
 
         <div class="container">
-            
 
                <!-- TOP  HEADER -->
-
             <div class="section">
                 <div class="top-header">
 
@@ -35,15 +101,15 @@
                 <div class="left-topheader">
 
                     <div class="blog">
-                        <h3><a href="Blog">Blog</a></h3>
+                        <span><a href="Blog">Blog</a></span>
                     </div>
 
                     <div class="featured">
-                        <h3><a href="#">Featured product</a></h3>
+                        <span><a href="javascript:void(0)">Featured product</a></span>
                     </div>
 
                     <div class="wishlist">
-                        <h3>Wishlist</h3>
+                        <span><a href="wishlist/wishlist.html">Wishlist</a></span>
                     </div>
 
 
@@ -55,36 +121,35 @@
                 <div class="right-topheader">
 
                     <div class="sign-up">
-                        <h3><a href="#">Sign up</a></h3>
+                        <span><a href="javascript:void(0)">Sign up</a></span>
                     </div>
 
                     <div class="account">
-                       <h3> <a href="#">my account</a></h3>
+                       <span> <a href="javascript:void(0)">my account</a></span>
                     </div>
 
                     <div class="tracking-order">
-                        <h3><a href="#">Order tracking</a></h3>
+                        <span><a href="javascript:void(0)">Order tracking</a></span>
                     </div>
 
-                    <div class="currencies">
+                    <div class="currencies drop-down">
 
-                        <select name="usd" id="usd-dropdown">
-                            <option value="1">usd</option>
-                            <option value="2">euro</option>
-                            <option value="3">gbp</option>
-                        </select>
+                    <select name="currencies" id="currencies">
+                        <option value="1">USD</option>
+                        <option value="2">EURO</option>
+                        <option value="3">Naira</option>
+                    </select>
 
                     </div>
 
-                    <div class="language">
+                    <div class="language drop-down">
 
-                        <select name="usd" id="">
-                            <option value="4">English</option>
-                            <option value="5">Spanish</option>
-                            <option value="6">korea</option>
-                            <option value="7">german</option>
-                        </select>
-
+                     <select name="country" id="country">
+                        <option value="1">English</option>
+                        <option value="2">spanish</option>
+                        <option value="3">korea</option>
+                     </select>
+                       
                     </div>
 
                 </div>
@@ -95,369 +160,1320 @@
 
 
                 <!-- HEADER MAIN -->
-
             <div class="section">
-                <div class="header-main">  
 
                         <!-- DESKTOP MENU -->
-                    <div class="desktop-navigation-menu">
+                <div class="header-main">  
+
+                        <div class="desktop-navigation-menu">
+
                          <div class="Desktop-section">
+
 
                                   <!-- LOGO -->
                             <div class="logo">
-                                <ion-icon name="menu" class="menu-btn btn-icon"></ion-icon>
+                                <ion-icon name="menu" class="open-menu"></ion-icon>
                                 <h2 class="easibuy">EasiBuy</h2>
                             </div>  
                             
 
-                                <!-- LOGO LIST -->
-                            <div class="logo-list">
+                                <!-- FLEX ITEMS -->
+                            <div class="header-flex-items">
 
-                                <!-- HOME-SECTION -->
-                            <ul class="home-section">
+                               <div class="main-nav">
 
-                                <h3>Home</h3>
+                                    <!-- HOME-SECTION -->
+                                <ul class="home-section topicHeader">
 
-                            </ul>
+                                        <a href="javascript:void(0)" class="collection-head">
 
+                                            <span class="head-name ">Home</span>
+                                        
+                                        </a>
 
-                                <!-- SHOP-SECTION -->
-                            <ul class="shop-section">
-
-                                <h3>Shop</h3>
-
-                            </ul>
+                                </ul>
 
 
-                                <!-- WOMEN-SECTION -->
-                            <ul class="women-section">
+                                    <!-- SHOP-SECTION -->
+                                <ul class="shop-section topicHeader ">
 
-                                <select name="women-list">
-                                    <option value="1">
-                                        <h3>Woman</h3>
-                                    </option>
-                                </select>
+                                            <a href="javascript:void(0)" class="collection-head">
 
-                                <div class="women-collection">
+                                            <span class="head-name">Sheo</span>
 
-                                    <ul class="women-colthing">
-                                        <h3>women's clothing</h3>
+                                            </a>
 
-                                        <li class="women-listing">
-
-                                            <li>Dress</li>
-                                            <li>Tops</li>
-                                            <li>Jacket</li>
-                                            <li>Shorts</li>
-                                            <li>skirt</li>
-                                            <li>underwears</li>
-                                            <li>custume</li>
-
-                                        </li>
-                                    </ul>
-
-                                    <ul class="jewelry">
-
-                                        <h3>jewelry</h3>
-
-                                        <li class="jewelry-list">
-
-                                            <li>accersories</li>
-                                            <li>earing</li>
-                                            <li>body jewelry</li>
-                                            <li>necklace</li>
-                                            <li>ring</li>
-                                            <li>braclets</li>
-                                            <li>purses</li>
-
-                                        </li>
+                                </ul>
 
 
-                                    </ul>
-
-                                    <ul class="beauty">
-
-                                        <h3>Beauty</h3>
-
-                                        <li class="Beauty-list">
-
-                                            <li>makeup $ cosmetics</li>
-                                            <li>skin care</li>
-                                            <li>hair care</li>
-                                            <li>essential oil</li>
-                                            <li>creams</li>
-                                            <li>face mask</li>
-                                            <li>bath accersories</li>
-
-                                        </li>
+                                    <!-- WOMEN-SECTION -->
+                                <ul class="women-section topicHeader">
 
 
-                                    </ul>
+                                    <a href="javascript:void(0)" class="collection-head click">
 
-                                    <ul class="top brand">
+                                            <span class="head-name">women fashion</span>
+                                            <ion-icon name="caret-forward-outline" class="icon-flex"></ion-icon>
 
-                                        <h3>Top brands</h3>
+                                    </a>
 
-                                        <li class="topbrand-list">
+                                    
+                                        <div class="women-list collection order-list">
+                                          
+                                            <div class="women-colthing option">
+                                                <h3 class="dropdownTitle">women's clothing</h3>
 
-                                            <li>hermes</li>
-                                            <li>mc queen</li>
-                                            <li>zara</li>
-                                            <li>tory burch</li>
-                                            <li>hermes</li>
-                                            <li>gucci</li>
-                                            <li>naked wolf</li>
+                                                <ul class="women-listing dropdownItems">
 
-                                        </li>
+                                                    <li>Dress</li>
+                                                    <li>Tops</li>
+                                                    <li>Jacket</li>
+                                                    <li>Shorts</li>
+                                                    <li>skirt</li>
+                                                    <li>underwears</li>
+                                                    <li>custume</li>
+
+                                            
+                                                </ul>
+                                            </div> 
+                                            
+                                            <div class="jewelry option">
+
+                                                <h3 class="dropdownTitle">jewelry</h3>
+
+                                                <ul class="jewelry-list dropdownItems">
+
+                                                    <li>accersories</li>
+                                                    <li>earing</li>
+                                                    <li>body jewelry</li>
+                                                    <li>necklace</li>
+                                                    <li>ring</li>
+                                                    <li>braclets</li>
+                                                    <li>purses</li>
+
+                                            </ul>
+
+                                            </div>  
+
+                                            <div class="beauty option">
+
+                                                <h3 class="dropdownTitle">Beauty</h3>
+
+                                                <ul class="Beauty-list dropdownItems">
+
+                                                    <li>makeup $ cosmetics</li>
+                                                    <li>skin care</li>
+                                                    <li>hair care</li>
+                                                    <li>essential oil</li>
+                                                    <li>creams</li>
+                                                    <li>face mask</li>
+                                                    <li>bath accersories</li>
+
+                                                </ul>     
+
+                                            </div>   
+        
+                                            <div class="women-image">
+                                                <p class="content">
+                                                    <span>most wanted!</span>
+                                                    <button>order now</button>
+                                                </p>
+
+                                                <img width="100px" src="images/easibuy product banner.jpg" class="woman-image1">
+                                            </div>                         
+                                            
+                                        </div> 
+
+                                </ul>  
+
+                                <!-- MEN-SECTION -->
+                                <ul class="men-section topicHeader">
+
+                                    
+                                    <a href="javascript:void(0)" class="collection-head click">
+
+                                            <span class="head-name ">men fashion</span>
+                                    </a>
+
+                                </ul>   
 
 
-                                    </ul>
- 
-                                    <ul class="women-image">
-                                        <p>
-                                             <span>most wanted!</span>
-                                            <button>order now</button>
-                                        </p>
+                                    <!-- SPORT-SECTION -->
+                                <ul class="sport-section topicHeader">
 
-                                        <img width="100px" src="images/women photo/easiBuy photo1.webp" class="woman-image1">
-                                    </ul>
+                                
+                                        <a href="javascript:void(0)" class="collection-head click">
+
+                                            <span class="head-name relative">Sport
+                                                    <span class="new">New</span>
+                                            </span>
+                                        
+                                            <ion-icon name="caret-forward-outline" class="icon-flex"></ion-icon>
+                                        </a>
+
+
+                                    <div class="sport-list collection order-list">
+
+                                        <div class="sport-colthing option">
+                                            <h3 class="dropdownTitle">Sport wears</h3>
+
+                                            <ul class="sport-listing dropdownItems">
+
+                                                <li>joggers</li>
+                                                <li>tracksuit</li>
+                                                <li>leggings</li>
+                                                <li>sport jacket</li>
+                                                <li>shorts</li>
+                                                <li>sports bra</li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="Sport-accersories option">
+
+                                            <h3 class="dropdownTitle">sport equipments</h3>
+
+                                            <ul class="sportaccersories-list dropdownItems">
+
+                                                <li>socks</li>
+                                                <li>armbands</li>
+                                                <li>sport watches</li>
+                                                <li>caps</li>
+                                                <li>gym bag</li>
+                                                <li>water bottle</li>
+                                                
+
+                                            </ul>
+
+
+                                        </div>
+
+                                        <div class="sport footwear option">
+
+                                            <h3 class="dropdownTitle">sport footwear</h3>
+
+                                            <ul class="sportfootwear-list dropdownItems">
+
+                                                <li>runing shoes</li>
+                                                <li>basketball sheos</li>
+                                                <li>soccer cleats</li>
+                                                <li>tennis sheo</li>
+                                                <li>slides</li>
+                                                <li>training sheo</li>
+                                                
+
+                                            </ul>
+
+
+                                        </div>
+
+                                          <div class="women-image">
+                                                <p class="content">
+                                                    <span>most wanted!</span>
+                                                    <button>order now</button>
+                                                </p>
+
+                                                <img width="100px" src="images/sport.jpg" class="woman-image1">
+                                            </div>                         
+                                    </div>
+
+                                </ul>  
+
+                               </div>
+
+                            </div>    
+
+
+                              <!-- cart-outline ICON -->
+
+                                <div class="cart-container">
+
+                                    <div class="icon-space">
+                                        <ion-icon name="cart-outline" class="cart-btn icon-btn"></ion-icon> 
+                                        <span class="count"><h2>0</h2></span>
+                                    </div>
+
+                                    <div class="close-btn">
+                                        <a href="wishlist/wishlist.html"><ion-icon name="heart-outline" class="heart-outline-btn icon-btn"></ion-icon>
+                                        <span><h2>0</h2></span></a>
+                                    </div>
+
+                                    <div class="close-cart cart-outline-price">cart</div>
 
                                 </div>
 
-                            </ul>
+    
 
-
-                              <!-- MEN-SECTION -->
-                            <ul class="men-section">
-
-                                <select name="men-list">
-                                    <option value="1">
-                                        <h3>Men</h3>
-                                    </option>
-                                </select>
-
-                                <div class="men-collection">
-
-                                    <div class="men-colthing">
-                                        <h3>men's clothing</h3>
-
-                                        <ul class="men-listing">
-
-                                            <li>shirt</li>
-                                            <li>Tops</li>
-                                            <li>Jacket</li>
-                                            <li>Shorts</li>
-                                            <li>trouser</li>
-                                            <li>suit</li>
-
-                                        </ul>
-                                    </div>
-
-                                    <div class="men-accersories">
-
-                                        <h3>men accersories</h3>
-
-                                        <ul class="accersories-list">
-
-                                            <li>chain</li>
-                                            <li>watch</li>
-                                            <li>ring</li>
-                                            <li>bracelet</li>
-                                            <li>necklaces</li>
-                                            <li>braclets</li>
-                                            
-
-                                        </ul>
-
-
-                                    </div>
-
-                                    <div class="top brand">
-
-                                        <h3>Top brands</h3>
-
-                                        <ul class="topbrand-list">
-
-                                            <li>nike</li>
-                                            <li>addidas</li>
-                                            <li>zara</li>
-                                            <li>louis vuitton</li>
-                                            <li>hermes</li>
-                                            <li>gucci</li>
-                                            <li>naked wolf</li>
-
-                                        </ul>
-
-
-                                    </div>
- 
-                                    <ul class="men-image">
-                                        <p>
-                                             <span>most wanted!</span>
-                                            <button>order now</button>
-                                        </p>
-
-                                        <img width="100px" src="images/" class="men-image1">
-                                    </ul>
-
-                                </div>
-
-                            </ul>   
-
-
-                                <!-- SPORT-SECTION -->
-                             <ul class="sport-section">
-
-                                <select name="men-list">
-                                    <option value="1">
-                                        <h3>Sport <span>new</span></h3>
-                                    </option>
-                                </select>
-
-                                <div class="sport-collection">
-
-                                    <div class="sport-colthing">
-                                        <h3>Sport wears</h3>
-
-                                        <ul class="sport-listing">
-
-                                            <li>joggers</li>
-                                            <li>tracksuit</li>
-                                            <li>leggings</li>
-                                            <li>sport jacket</li>
-                                            <li>shorts</li>
-                                            <li>sports bra</li>
-
-                                        </ul>
-                                    </div>
-
-                                    <div class="Sport-accersories">
-
-                                        <h3>sport equipments</h3>
-
-                                        <ul class="sportaccersories-list">
-
-                                            <li>socks</li>
-                                            <li>armbands</li>
-                                            <li>sport watches</li>
-                                            <li>caps</li>
-                                            <li>gym bag</li>
-                                            <li>water bottle</li>
-                                            
-
-                                        </ul>
-
-
-                                    </div>
-
-                                    <div class="sport footwear">
-
-                                        <h3>sport footwear</h3>
-
-                                        <ul class="sportfootwear-list">
-
-                                            <li>runing shoes</li>
-                                            <li>basketball sheos</li>
-                                            <li>soccer cleats</li>
-                                            <li>tennis sheo</li>
-                                            <li>slides</li>
-                                            <li>training sheo</li>
-                                            
-
-                                        </ul>
-
-
-                                    </div>
- 
-                                    <ul class="sport-image">
-                                        <p>
-                                             <span>most wanted!</span>
-                                            <button>order now</button>
-                                        </p>
-
-                                        <img width="100px" src="images/" class="sport-image1">
-                                    </ul>
-
-                                </div>
-
-                             </ul>  
-
-                            </div>
-
-
-                              <!-- CART ICON -->
-                            <div class="cart-icon">
-                                <ion-icon name="cart" class="cart-btn btn-icon"><span>0</span></ion-icon>
-                            </div>
+                               </div>
 
                         </div>
 
-                    </div>
+                </div>
                     
 
-
-                         <!-- MOBILE MENU -->
-                         <div class="mobile-menu">
+                        <!-- MOBILE MENU -->
+                <div class="mobile-menu">
                         
                             <div class="icon-list">
-                                <ion-icon name="home" class="house-btn btn-icon"></ion-icon>
-                                <ion-icon name="person" class="person-btn btn-icon"></ion-icon>
-                                <ion-icon name="heart" class="love-btn btn-icon"></ion-icon>
-                                <ion-icon name="search" class="search-btn btn-icon"></ion-icon>
-                                <ion-icon name="cart" class="cart-btn btn-icon"><span>0</span></ion-icon>
-                                
+                                <a href="/index.html"><ion-icon name="home-outline" class="house-btn btn-icon"></ion-icon></a>
+                                <a href="profile/profile.html"><ion-icon name="person-outline" class="person-btn btn-icon"></ion-icon></a>
+                                <a href="search/search.html"><ion-icon name="search-outline" class="search-btn btn-icon"></ion-icon></a>
+                                <a href="wishlist/wishlist.html"><ion-icon name="heart-outline" class="love-btn btn-icon"></ion-icon>  </a>                    
                             </div>
 
-                       </div>  
+                </div>  
     
-                </div>
-
             </div>
 
 
 
-
                 <!--HEADER BOTTOM -->
-
-            <div class="section">
+              <div class="section">
 
                 <div class="header-bottom">
+                    <div class="bottom-container">
 
+                    <!-- DEPARTMENT -->
                     <div class="department">
-                        <h4>All departments</h4>
-                        <span></span>
+
+                        <h4 class="department-label">All departments
+                             <span class="dept-content">Lorem ipsum dolor sit amet.</span></h4>
+
+                        <div class="department-menu">
+                            <ul class="department-list">
+
+                                <li class="beauty-flex dept">
+
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="woman" class="icon-large"></ion-icon>
+                                         <span class="label">Beauty</span>
+                                        <ion-icon class="icon-small" name="caret-forward-outline"></ion-icon>
+                                    </a>
+
+                                     <ul class="beauty-list list">
+                                        <li>skin care</li>
+                                        <li>makeup</li>
+                                        <li>hair care</li>
+                                        <li>fragrancs</li>
+                                        <li>nails</li>
+                                        <li>bath & body</li>
+                                        <li>organin product</li>
+                                        <li>facial rollers</li>
+                                     </ul>
+
+                                </li>
+
+                                <li class="electronic-dept dept">
+
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="bluetooth"  class="icon-large"></ion-icon>
+                                        <span class="label">Electronics</span>
+                                        <ion-icon name="caret-forward-outline"  class="icon-small"></ion-icon>
+                                    </a>
+
+                                        <ul class="electronic-list list">
+                                            <li>computer</li>
+                                            <li>camera</li>
+                                            <li>television</li>
+                                            <li>smart phone</li>
+                                            <li>Home audio</li>
+                                            <li>gaming</li>
+                                            <li>smart watch</li>
+                                        </ul>
+
+                                </li>
+
+                                <li class="girl-fashion-flex dept">
+
+                                    <a href="javascript:void(0)" class="dept-head">
+                                       <ion-icon name="shirt" class="icon-large"></ion-icon>
+                                          <span class="label">girl fashion</span>
+                                        <ion-icon name="caret-forward-outline" class="icon-small"></ion-icon>
+                                    </a>
+
+                                     <ul class="girl-fasion list">
+                                            <li>sheo</li>
+                                            <li>clothes</li>
+                                            <li>jewelry</li>
+                                            <li>bags</li>
+                                            <li>accessories</li>
+                                            <li>watches</li>
+                                            <li>rings</li>
+                                        </ul>
+
+                                </li>
+
+                                <li class="boy-fashion-flex dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="watch" class="icon-large"></ion-icon>
+                                        <span class="label">boy fashion</span>
+                                    </a>
+                                </li>
+
+                                <li class="home-kitchen dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="home" class="icon-large"></ion-icon>
+                                         <span class="label">Home & Kitchen</span>
+                                    </a>
+                                </li>
+
+                                 <li class="health-flex dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="medkit" class="icon-large"></ion-icon>
+                                         <span class="label">health & accersories</span>
+                                    </a>
+                                </li>
+
+                                 <li class="pet-flex dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="bug" class="icon-large"></ion-icon>
+                                        <span class="label"> pet supplier</span>
+                                    </a>
+                                </li>
+
+                                 <li class="best-sell dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="location" class="icon-large"></ion-icon>
+                                         <span class="label">Best seller</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
                     </div>
 
-                    <div class="search-bar">
-                        <input type="text" placeholder="search for photos">
+
+                    <!-- SEARCH BAR -->
+                    <a href="search/search.html"  class="search-bar">
                         <ion-icon name="search" class="search-btn"></ion-icon>
+                        <input type="text" placeholder="search for photos">
                         <span>search</span>
-                    </div>
+                    </a>
 
                 </div>
-    
+                </div>
+
             </div>
 
         </div>
 
     </header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+         
     
+    <main>
+        
+        <div class="container">   
+ 
+                     <!-- MAIN BANNER  -->                  
+             <div class="main-banner">
+            
+                <div class="swiper">
+
+                <div class="banner-slides swiper-wrapper">
+
+                    <div class="banner-item swiper-slide">
+
+                        <div class="banner-image">
+                            <img  width="50px" src="images/bannermain/easi buy girl fashion.jpg" alt="sheo">
+                        </div>
+
+                        <div class="banner-content">
+                            <h4>transform</h4>
+                           <h4>Elevate your style</h4>
+                           <h4>with luxury items</h4>
+                           <h4>shop now</h4>
+                        </div>
+                      
+
+                    </div>
+
+                    <div class="banner-item swiper-slide">
+
+                        <div class="banner-image">
+                            <img  src="images/bannermain/easibuysneakers.jpg" width="50px"  alt="women">
+                      </div>
+
+                        <div class="banner-content">
+                            <h4>transform</h4>
+                            <h4>come get it</h4>
+                            <h4>brand new sheo</h4>
+                            <h4>shop now</h4>
+                        </div>
+                       
+
+                    </div>
+
+                     <div class="banner-item swiper-slide">
+
+                     <div class="banner-image">  
+                            <img src="images/bannermain/easibuy sport.jpg" width="50px" alt="sport">
+                    </div>    
+
+                        <div class="banner-content">
+                           <h4>transform</h4>
+                           <h4>home workout accessories</h4>
+                           <h4>push the limit</h4>
+                           <h4>shop now</h4>
+                        </div>
+
+
+                    </div>
+
+                     <div class="banner-item swiper-slide">
+
+                        <div class="banner-image">
+                            <img  src="images/bannermain/men fashion.jpg" width="50px" alt="men">
+                        </div>   
+
+                        <div class="banner-content">
+                           <h4 class="transform">transform</h4>
+                           <h4>complete your drip</h4>
+                           <h4>with our special</h4>
+                           <h4>shop now</h4>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                </div>
+
+            </div> 
+
+                     <!-- TRENDING PRODUCT -->
+            
+            <div class="product-container">
+
+                <div class="trending-product">
+
+                    <h2 class="product-header">
+                        Trending Product
+                    </h2>
+                    <div class="line"></div>
+
+
+                    <div class="product-list">
+
+                        <!-- PRODUCT-BANNER -->
+
+                        <div class="product-banner">
+
+                            <div class="promo">
+                                <div class="promo-logo">
+                                    flash sales
+                                </div>
+
+                                <div class="promo-timeout">
+                                     <span>04</span>:
+                                     <span>20</span>:
+                                     <span>50</span>
+                                </div>
+                            </div>
+
+                            <div class="image-container">
+
+                            <img class="product-image-banner" width="30px" src="images/easibuy product banner.jpg" alt="product banner">
+                            
+                            <div class="image-icon">
+                                <ion-icon class="like" name="heart-outline"></ion-icon>
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </div>
+
+                            </div>
+
+                            <div class="product-banner-content">
+
+                                <div class="rating">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <span>(30 verified rating)</span>
+                                </div>
+
+                                <p class="name">happy salled womens summer boho floral</p>
+
+                                <p class="c">$150.00 <span class="mark-out">$120.01</span></p>
+
+                                <div class="quantity">
+
+                                <div class="quantity-number">
+                                    <div class="value">9 item left</div>
+                                    <div class="slider">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                         <!-- PRODUCT-LABEL -->
+
+                        <div class="product-label">
+
+                          <div class="product-item" data-id= "1" data-name="Sneakers" data-price="25000" data-image="images/easibuy shoe.jpg">
+
+                            <div class="image">
+                                <img src="images/easibuy shoe.jpg" width="30px" class="product-image">
+                                <div class="image-icon">
+                                    <ion-icon class="icon-hover like" name="heart-outline"></ion-icon> 
+                                    <ion-icon class='icon-hover add-to-cart' name='cart-outline'></ion-icon> 
+                                </div>
+                            </div>
+
+                            <div class="item-content">
+
+                                <p class="product-name">Sneakers</p>
+
+                                <div class="rating">
+                                        
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <span>(45 verified rating)</span>
+
+                                </div>
+
+                                <p class="price product-price">$25000<span class="mark-out">40.00</span></p>
+
+                            </div>
+
+                          </div>
+
+
+                          <div class="product-item" data-id= "2" data-name="Fendi cooporates" data-price="25000" data-image="images/fendi.jpg">
+
+                            <div class="image">
+                                <img src="images/fendi.jpg" width="30px" class="product-image">
+                                <div class="image-icon">
+                                    <ion-icon class="icon-hover like" name="heart-outline"></ion-icon> 
+                                    <ion-icon class='icon-hover add-to-cart' name='cart-outline'></ion-icon> 
+                                </div>
+                            </div>
+
+                            <div class="item-content">
+
+                                <p class="product-name">Fendi cooporates</p>
+
+                                <div class="rating">
+                                        
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <span>(45 verified rating)</span>
+
+                                </div>
+
+                                <p class="price product-price">$25000<span class="mark-out">40.00</span></p>
+
+                            </div>
+
+                          </div>
+
+                          <div class="product-item" data-id= "3" data-name="men half sheo" data-price="50000" data-image="images/fendi.jpg">
+
+                            <div class="image">
+                                <img src="images/half sheo.jpg" width="30px" class="product-image">
+                                <div class="image-icon">
+                                    <ion-icon class="icon-hover like" name="heart-outline"></ion-icon> 
+                                    <ion-icon class='icon-hover add-to-cart' name='cart-outline'></ion-icon> 
+                                </div>
+                            </div>
+
+                            <div class="item-content">
+
+                                <p class="product-name">men half sheo</p>
+
+                                <div class="rating">
+                                        
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon  name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <span>(45 verified rating)</span>
+
+                                </div>
+
+                                <p class="price product-price">$50000<span class="mark-out">40.00</span></p>
+
+                            </div>
+
+                          </div>
+
+                          <div class="product-item" data-id= "4" data-name="nike sneakers" data-price="40000" data-image="images/bannermain/easibuysneakers.jpg">
+
+                            <div class="image">
+                                <img src="images/bannermain/easibuysneakers.jpg" width="30px" class="product-image">
+                                <div class="image-icon">
+                                    <ion-icon class="icon-hover like" name="heart-outline"></ion-icon> 
+                                    <ion-icon class='icon-hover add-to-cart' name='cart-outline'></ion-icon> 
+                                </div>
+                            </div>
+
+                            <div class="item-content">
+
+                                <p class="product-name">nike sneakers</p>
+
+                                <div class="rating">
+                                        
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon  name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <span>(45 verified rating)</span>
+
+                                </div>
+
+                                <p class="price product-price">$40000<span class="mark-out">40.00</span></p>
+
+                            </div>
+
+                          </div>
+
+                           <div class="product-item" data-id= "5" data-name="Fendi black cooporates" data-price="25000" data-image="images/fendi.jpg">
+
+                            <div class="image">
+                                <img src="images/fendi.jpg" width="30px" class="product-image">
+                                <div class="image-icon">
+                                    <ion-icon class="icon-hover like" name="heart-outline"></ion-icon> 
+                                    <ion-icon class='icon-hover add-to-cart' name='cart-outline'></ion-icon> 
+                                </div>
+                            </div>
+
+                            <div class="item-content">
+
+                                <p class="product-name">Fendi black cooporates</p>
+
+                                <div class="rating">
+                                        
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <span>(45 verified rating)</span>
+
+                                </div>
+
+                                <p class="price product-price">$25000<span class="mark-out">40.00</span></p>
+
+                            </div>
+
+                          </div>
+
+                           <div class="product-item" data-id= "6" data-name="white Sneakers" data-price="25000" data-image="images/easibuy shoe.jpg">
+
+                            <div class="image">
+                                <img src="images/easibuy shoe.jpg" width="30px" class="product-image">
+                                <div class="image-icon">
+                                    <ion-icon class="icon-hover like" name="heart-outline"></ion-icon> 
+                                    <ion-icon class='icon-hover add-to-cart' name='cart-outline'></ion-icon> 
+                                </div>
+                            </div>
+
+                            <div class="item-content">
+
+                                <p class="product-name">white Sneakers</p>
+
+                                <div class="rating">
+                                        
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <ion-icon class="ash" name="star"></ion-icon>
+                                    <span>(45 verified rating)</span>
+
+                                </div>
+
+                                <p class="price product-price">$25000<span class="mark-out">40.00</span></p>
+
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>         
+
+
+                     <!-- FEATURED PRODUCT -->
+
+            <div class="featured-product">
+
+                <div class="featured-header">
+                    <h2>Featured Product</h2>
+                    <div class="line"></div>
+                </div>
+               
+                <div class="featured-product-list">
+                    
+                    <div class="featured-label">
+
+                        <div class="product-grid product-item">
+
+                            <div class="feature-image">
+                                <img src="images/easibuy shoe.jpg" width="30px" class="product-image">
+
+                                <div class="image-icon">
+                                    <ion-icon class="like" name="heart-outline"></ion-icon>
+                                    <ion-icon name="cart-outline" class="add-to-cart"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <div class="featured-intro">
+
+                                <div class="rating">    
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <span>(45 verified rating)</span>
+                                </div>
+
+                                <h4 class="product-name">white nike sneakers</h4>
+
+                                <div class="featured-price product-price">$50.00 <span class="markout">$70.00</span> </div>
+                            </div>
+
+                        </div>
+
+                        <div class="product-grid product-item">
+
+                            <div class="feature-image">
+                                <img src="images/half sheo.jpg" width="30px" class="product-image">
+
+                                <div class="image-icon">
+                                    <ion-icon class="like" name="heart-outline"></ion-icon>
+                                    <ion-icon name="cart-outline" class="add-to-cart"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <div class="featured-intro">
+
+                                <div class="rating">    
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <span>(45 verified rating)</span>
+                                </div>
+
+                                <h4 class="product-name">white men half sheo</h4>
+
+                                <div class="featured-price product-name" >$40.00 <span class="markout">$60.00</span> </div>
+                            </div>
+
+                        </div>
+
+                        <div class="product-grid product-item">
+
+                            <div class="feature-image">
+                                <img src="images/sneakers.jpg" width="30px" class="product-image">
+
+                                <div class="image-icon">
+                                    <ion-icon class="like" name="heart-outline"></ion-icon>
+                                    <ion-icon name="cart-outline" class="add-to-cart"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <div class="featured-intro">
+
+                                <div class="rating">    
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <span>(45 verified rating)</span>
+                                </div>
+
+                                <h4 class="product-name">white ans ash balenciaga</h4>
+
+                                <div class="featured-price product-price">$30.00 <span class="markout">$60.00</span> </div>
+                            </div>
+
+                        </div>
+
+                        <div class="product-grid product-item">
+
+                            <div class="feature-image">
+                                <img src="images/veneta.jpg" width="30px" class="product-image">
+
+                                <div class="image-icon">
+                                    <ion-icon class="like" name="heart-outline"></ion-icon>
+                                    <ion-icon name="cart-outline" class="add-to-cart"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <div class="featured-intro">
+
+                                <div class="rating">    
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <span>(30 verified rating)</span>
+                                </div>
+
+                                <h4 class="product-name">black bottega veneta </h4>
+
+                                <div class="featured-price product-price">$80.00 <span class="markout">$90.00</span> </div>
+                            </div>
+
+                        </div>
+
+                        <div class="product-grid product-item">
+
+                            <div class="feature-image">
+                                <img src="images/easibuy shoe.jpg" width="30px" class="product-image">
+
+                                <div class="image-icon">
+                                    <ion-icon class="like" name="heart-outline"></ion-icon>
+                                    <ion-icon name="cart-outline" class="add-to-cart"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <div class="featured-intro">
+
+                                <div class="rating">    
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <span>(60 verified rating)</span>
+                                </div>
+
+                                <h4 class="product-name">white nike sneakers</h4>
+
+                                <div class="featured-price product-price">$50.00 <span class="markout">$70.00</span> </div>
+                            </div>
+
+                        </div>
+
+                        <div class="product-grid product-item">
+
+                            <div class="feature-image">
+                                <img src="images/sne fendi.jpg" width="30px" class="product-image">
+
+                                <div class="image-icon">
+                                    <ion-icon class="like" name="heart-outline"></ion-icon>
+                                    <ion-icon name="cart-outline" class="add-to-cart"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <div class="featured-intro">
+
+                                <div class="rating">    
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <span>(45 verified rating)</span>
+                                </div>
+
+                                <h4 class="product-name">black fendi sneakers</h4>
+
+                                <div class="featured-price product-price">$70.00 <span class="markout">$90.00</span> </div>
+                            </div>
+
+                        </div>
+
+                        <div class="product-grid product-item">
+
+                            <div class="feature-image">
+                                <img src="images/sneakers.jpg" width="30px" class="product-image">
+
+                                <div class="image-icon">
+                                    <ion-icon class="like" name="heart-outline"></ion-icon>
+                                    <ion-icon name="cart-outline" class="add-to-cart"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <div class="featured-intro">
+
+                                <div class="rating">    
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon  name="star"></ion-icon>
+                                        <ion-icon  name="star"></ion-icon>
+                                        <span>(90 verified rating)</span>
+                                </div>
+
+                                <h4 class="product-name">white and ash balenciaga</h4>
+
+                                <div class="featured-price product-price">$50.00 <span class="markout">$70.00</span> </div>
+                            </div>
+
+                        </div>
+
+                        <div class="product-grid product-item">
+
+                            <div class="feature-image">
+                                <img src="images/prada.jpg" width="30px" class="product-image">
+
+                                <div class="image-icon">
+                                    <ion-icon class="like" name="heart-outline"></ion-icon>
+                                    <ion-icon name="cart-outline" class="add-to-cart"></ion-icon>
+                                </div>
+
+                            </div>
+
+                            <div class="featured-intro">
+
+                                <div class="rating">    
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon name="star"></ion-icon>
+                                        <ion-icon  name="star"></ion-icon>
+                                        <ion-icon class="ash" name="star"></ion-icon>
+                                        <span>(54 verified rating)</span>
+                                </div>
+
+                                <h4 class="product-name">prada sneakers</h4>
+
+                                <div class="featured-price product-price">$30.00 <span class="markout">$70.00</span> </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+                    <!-- BEST SELLER -->
+
+             <div class="best-seller">
+
+                <div class="seller-container">
+
+                         <div class="best-seller-wrapper">
+
+                                <div class="best-slide">
+                                    <div class="swiper-image">
+                                        <img src="images/women photo/easiBuy photo1.webp" width="50px">
+                                    </div>
+                                    <div class="swiper-writeup">
+                    
+                                        <h3>Best Seller!</h3>
+                                        <h4>Lorem ipsum dolor sit.</h4>
+                                        <h4>women fashion with easibuy</h4>
+                                        <span><a href="/">shop now</a></span>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="best-slide">
+
+                                    <div class="swiper-image">
+                                        <img src="images/easibuy product banner.jpg" width="50px">
+                                    </div>
+                                    <div class="swiper-writeup">
+                                        <h3>Best Seller!</h3>
+                                        <h4>Lorem ipsum dolor sit.</h4>
+                                        <h4>women fashion with easibuy</h4>
+                                        <span><a href="/">shop now</a></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="best-slide">
+
+                                    <div class="swiper-image">
+                                        <img src="images/sneakers.jpg" width="50px">
+                                    </div>
+                                    <div class="swiper-writeup">
+                                        <h3>Best Seller!</h3>
+                                        <h4>Lorem ipsum dolor sit.</h4>
+                                        <h4>women fashion with easibuy</h4>
+                                        <span><a href="/">shop now</a></span>
+                                    </div>
+
+                                </div>
+
+                         </div> 
+
+                </div>
+
+             </div> 
+
+
+             <!-- CLOSING SECTION -->
+            <div class="closing-section">
+
+                <div class="mini-product">
+
+                    <div class="product-area">
+
+                        <div class="gadget object-container">
+
+                            <div class="gadget-image mini-image">
+                                <img src="images/headset.jpg" width="50px">
+                            </div>
+
+                            <div class="link-container">
+
+                                 <h2>Gadgets</h2>
+
+                                
+                                <div class="link-row">
+                                   <div class="mini-links">
+    
+                                <a href="/">iphone</a>
+                                <a href="/">tablets</a>
+                                <a href="/">laptops</a>
+                                <a href="/">lightpen</a>
+                                <a href="/">ipads</a>
+                                <a href="/">samsung</a>
+                                   </div>
+
+                                   <div class="mini-link-second">
+                                <a href="/">tekno</a>
+                                <a href="/">powerbanks</a>
+                                <a href="/">headset</a>
+                                <a href="/">mifi</a>
+                                <a href="/">laptop stand</a>
+                                <a href="/">redmi</a>
+                                   </div>
+                                </div>
+                              
+
+                            </div>
+
+                        </div>
+
+                        <div class="beauty object-container">
+
+                            <div class="beauty-image mini-image">
+                                <img src="images/jewelry.jpg" width="50px">
+                            </div>
+
+                            <div class="link-container">
+                                <h2>Beauty</h2>
+
+                                <div class="link-row">
+                                  <div class="mini-links">
+                               
+                                <a href="/">powder</a>
+                                <a href="/">eye liner</a>
+                                <a href="/">lip gloss</a>
+                                <a href="/">eye shadow</a>
+                                <a href="/">mascara</a>
+                                <a href="/">eye pencil</a>
+                                  </div>
+
+                                  <div class="mini-link-second">
+                                <a href="/">foundation</a>
+                                <a href="/">blush</a>
+                                <a href="/">lipstick</a>
+                                <a href="/">makeup bag</a>
+                                <a href="/">face mask</a>
+                                <a href="/">whiper</a>
+                                  </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                         <div class="home object-container">
+
+                            <div class="home-image mini-image">
+                                <img src="images/home.jpg" width="50px">
+                            </div>
+
+                            <div class="link-container">
+                             <h2>home</h2>
+                             <div class="link-row">
+                               <div class="mini-links">
+                                
+                                <a href="/">broom</a>
+                                <a href="/">mop</a>
+                                <a href="/">hand towel</a>
+                                <a href="/">washing machine</a>
+                                <a href="/">dish washer</a>
+                                <a href="/">electric kettle</a>
+                               </div>
+
+                              <div class="mini-link-second">
+                                <a href="/">blender</a>
+                                <a href="/">spoon</a>
+                                <a href="/">pots</a>
+                                <a href="/">plate rack</a>
+                                <a href="/">microwave</a>
+                                <a href="/">griller</a>
+                              </div>
+                             </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+             
+                <!-- NEWS LETTER -->
+            <div class="news-letter">
+
+                <div class="new-container">
+
+                    <div class="newsletter-section">
+
+                        <div class="left-intro">
+                            <h4>join our Newsletter</h4>
+                            <p>Lorem ipsum dolor sit amet Lorem, ipsum dolor <span>Lorem, ipsum dolor.</span></p>
+                        </div>
+
+                        <div class="search-news">
+                            <input type="email" placeholder="Add Your  Email" >
+                            <button>sign up</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>     
+                     
+        </div>
+
+    </main>
+
+
+
+    <footer>
+        <div class="footer">
+
+            <div class="last-section">
+
+                <div class="footer-container">
+
+                    <div class="footer-categories">
+
+                      <div class="footer-list">
+                          <h2>Fashion</h2>
+                            <ul>
+                            <li>Stylish Sneakers</li>
+                            <li>Trendy Loafers</li>
+                            <li>Statement Heels</li>
+                            <li>Designer Sandals</li>
+                            <li>Chunky Boots</li>
+                            <li>Platform Shoes</li>
+                            <li>Embellished Flats</li>
+                            
+                            </ul>
+                      </div>
+
+                      <div class="footer-list">
+                          <h2>Sports</h2>
+                            <ul>
+                            <li>Running Shoes</li>
+                            <li>Football Boots</li>
+                            <li>Training Sneakers</li>
+                            <li>Basketball Shoes</li>
+                            <li>Gym Trainers</li>
+                            <li>Tennis Shoes</li>
+                            <li>Cricket Spikes</li>
+                           
+                            </ul>
+
+                      </div>
+
+                      <div class="footer-list">
+                            <h2>Casual</h2>
+                                <ul>
+                                <li>Slip-ons</li>
+                                <li>Canvas Sneakers</li>
+                                <li>Flip Flops</li>
+                                <li>Moccasins</li>
+                                <li>Espadrilles</li>
+                                <li>Casual Loafers</li>
+                                <li>Simple Sandals</li>
+                              
+                                </ul>
+
+                      </div>
+
+                      <div class="footer-list">
+                        <h2>Formal</h2>
+                            <ul>
+                            <li>Oxford Shoes</li>
+                            <li>Derby Shoes</li>
+                            <li>Monk Straps</li>
+                            <li>Dress Loafers</li>
+                            <li>Patent Leather Shoes</li>
+                            <li>Classic Brogues</li>
+                            <li>Luxury Leather Shoes</li>
+                            </ul>
+                      </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <h3>EasiBuy</h3>
+                <div class="icons">
+                    <ion-icon name="logo-tiktok"></ion-icon>
+                    <ion-icon name="logo-facebook"></ion-icon>
+                   <ion-icon name="logo-instagram"></ion-icon>
+                   <ion-icon name="logo-tiktok"></ion-icon>
+                    <ion-icon name="logo-github"></ion-icon>
+                </div>
+                <p>copywrite 2023 Lorem, ipsum dolor.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+
+
+
+         <!-- Swiper Link -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>     
+
     <!-- JAVASCRIPT LINK -->
- <script src="easibuy.js"></script> 
+ <script src="easibuy.js"></script>        
  
     <!-- ION-ICON LINK -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -466,6 +1482,3 @@
 </body>
 
 </html>
-
-
-

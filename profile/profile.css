@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin-inline: 0;
+}
+
+.main-container{
+    margin-inline: 0;
+    width: 100%;
+}
+
+.main-container .main-head{
+    background: var(--primary-color);
+}
+
+.main-container .main-head .head-label{
+    margin-inline: 10px;
+    padding-block: 13px;
+    color: white;
+}
+
+.main-container .main-head .head-label h3{
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.main-container .main-head .head-label h3 span:hover{
+    color: var(--secondary-color);
+}
+
+.main-container .main-head .head-label p{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.main-container .main-head .head-label p span{
+    color: var(--secondary-color);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.main-container .main-head .head-label p span:hover{
+    color: white;
+}
+
+.main-container .main-body h4{
+    background: var(--light-bg-color);
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.main-container .main-body .body-list{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.main-container .main-body .body-list .label{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 15px;
+    cursor: pointer;
+}
+
+.main-container .main-body .body-list .label:hover{
+    background: var(--light-bg-color);
+}

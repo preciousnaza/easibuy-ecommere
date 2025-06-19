@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasiBuy E-commerce</title>
+
+    
+       <!-- CSS LINK -->
+<link rel="stylesheet" href="/easibuy.css">
+<link rel="stylesheet" href="profile.css">
+
+        <!-- FONT FAMILY -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <aside class="menu-display">
+
+               <div class="aside-items">
+
+                 <div class="aside-wrapper">
+
+                    <div class="aside-header">
+
+                       <div class="aside-logo">
+                           <h2>EasiBuy</h2>
+                           <ion-icon class="close-menu" name="close"></ion-icon>
+                       </div>
+                       
+                    </div>
+
+                    <div class="aside-flex-item">
+
+                        <div class="dept-part"></div>
+                        <div class="header-flex-items-part"></div>
+                        <div class="headertop-part"></div>
+
+                    </div>
+
+                 </div>
+
+               </div>
+               
+    </aside>
+
+    <div class="cart-sidebar">
+
+        <div class="cart-section">
+
+            <div class="cart-list">
+
+                <div class="head">
+                    <p>My Cart</p>
+                    <p class="close-cart"><ion-icon name="close"></ion-icon></p> 
+                </div>
+
+                <div class="cart-product">
+                     <div id="cartItem">
+                        your cart is empty
+                    </div>
+                </div>
+
+                <div class="foot">
+                    <h4>total:</h4>
+                    <h4 id="total"> $0.00</h4>
+                </div>
+              
+             </div>
+                
+        </div>
+
+    </div>   
+                          
+    <header>
+
+        <div class="container">
+
+               <!-- TOP  HEADER -->
+            <div class="section">
+                <div class="top-header">
+
+                    <!-- LEFT SECTION -->
+
+                <div class="left-topheader">
+
+                    <div class="blog">
+                        <span><a href="Blog">Blog</a></span>
+                    </div>
+
+                    <div class="featured">
+                        <span><a href="javascript:void(0)">Featured product</a></span>
+                    </div>
+
+                    <div class="wishlist">
+                        <span><a href="javascript:void(0)">Wishlist</a></span>
+                    </div>
+
+
+                </div>
+
+
+                        <!-- RIGHT SECTION -->
+
+                <div class="right-topheader">
+
+                    <div class="sign-up">
+                        <span><a href="javascript:void(0)">Sign up</a></span>
+                    </div>
+
+                    <div class="account">
+                       <span> <a href="javascript:void(0)">my account</a></span>
+                    </div>
+
+                    <div class="tracking-order">
+                        <span><a href="javascript:void(0)">Order tracking</a></span>
+                    </div>
+
+                    <div class="currencies">
+
+                        <li>USD 
+                             <ion-icon class="icon-small icon-close" name="caret-forward-outline"></ion-icon>
+                        </li>
+                        <li>EURO</li>
+                        <li>ICR</li>
+
+                    </div>
+
+                    <div class="language">
+
+                       <li>english 
+                             <ion-icon class="icon-small icon-close" name="caret-forward-outline"></ion-icon>
+                        </li>
+                        <li>korea</li>
+                        <li>spanish</li>
+
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+
+
+                <!-- HEADER MAIN -->
+            <div class="section">
+
+                        <!-- DESKTOP MENU -->
+                <div class="header-main">  
+
+                        <div class="desktop-navigation-menu">
+
+                         <div class="Desktop-section">
+
+
+                                  <!-- LOGO -->
+                            <div class="logo">
+                                <ion-icon name="menu" class="open-menu"></ion-icon>
+                                <h2 class="easibuy">EasiBuy</h2>
+                            </div>  
+                            
+
+                                <!-- FLEX ITEMS -->
+                            <div class="header-flex-items">
+
+                               <div class="main-nav">
+
+                                    <!-- HOME-SECTION -->
+                                <ul class="home-section topicHeader">
+
+                                        <a href="javascript:void(0)" class="collection-head">
+
+                                            <span class="head-name ">Home</span>
+                                        
+                                        </a>
+
+                                </ul>
+
+
+                                    <!-- SHOP-SECTION -->
+                                <ul class="shop-section topicHeader ">
+
+                                            <a href="javascript:void(0)" class="collection-head">
+
+                                            <span class="head-name">Sheo</span>
+
+                                            </a>
+
+                                </ul>
+
+
+                                    <!-- WOMEN-SECTION -->
+                                <ul class="women-section topicHeader">
+
+
+                                    <a href="javascript:void(0)" class="collection-head click">
+
+                                            <span class="head-name">women fashion</span>
+                                            <ion-icon name="caret-forward-outline" class="icon-flex"></ion-icon>
+
+                                    </a>
+
+
+                                    <div class="women-list collection order-list">
+
+                                        <div class="women-colthing ">
+                                            <h3 class="dropdownTitle">women's clothing</h3>
+
+                                            <ul class="women-listing dropdownItems">
+
+                                                <li>Dress</li>
+                                                <li>Tops</li>
+                                                <li>Jacket</li>
+                                                <li>Shorts</li>
+                                                <li>skirt</li>
+                                                <li>underwears</li>
+                                                <li>custume</li>
+
+                                        
+                                            </ul>
+                                        </div> 
+                                        
+                                        <div class="jewelry">
+
+                                            <h3 class="dropdownTitle">jewelry</h3>
+
+                                            <ul class="jewelry-list dropdownItems">
+
+                                                <li>accersories</li>
+                                                <li>earing</li>
+                                                <li>body jewelry</li>
+                                                <li>necklace</li>
+                                                <li>ring</li>
+                                                <li>braclets</li>
+                                                <li>purses</li>
+
+                                        </ul>
+
+                                        </div>  
+
+                                        <div class="beauty">
+
+                                            <h3 class="dropdownTitle">Beauty</h3>
+
+                                            <ul class="Beauty-list dropdownItems">
+
+                                                <li>makeup $ cosmetics</li>
+                                                <li>skin care</li>
+                                                <li>hair care</li>
+                                                <li>essential oil</li>
+                                                <li>creams</li>
+                                                <li>face mask</li>
+                                                <li>bath accersories</li>
+
+                                            </ul>     
+
+                                        </div>   
+    
+                                        <div class="women-image">
+                                            <p>
+                                                <span>most wanted!</span>
+                                                <button>order now</button>
+                                            </p>
+
+                                            <img width="100px" src="images/easibuy product banner.jpg" class="woman-image1">
+                                        </div>                         
+                                        
+                                    </div> 
+
+                                </ul>
+
+
+                                <!-- MEN-SECTION -->
+                                <ul class="men-section topicHeader">
+
+                                    
+                                    <a href="javascript:void(0)" class="collection-head click">
+
+                                            <span class="head-name ">men fashion</span>
+                                            <ion-icon name="caret-forward-outline" class="icon-flex"></ion-icon>
+                                    </a>
+
+                                    <div class="men-list collection order-list">
+
+                                        <div class="men-colthing">
+                                            <h3 class="dropdownTitle">men's clothing</h3>
+
+                                            <ul class="men-listing dropdownItems">
+
+                                                <li>shirt</li>
+                                                <li>Tops</li>
+                                                <li>Jacket</li>
+                                                <li>Shorts</li>
+                                                <li>trouser</li>
+                                                <li>suit</li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="men-accersories">
+
+                                            <h3 class="dropdownTitle">men accersories</h3>
+
+                                            <ul class="accersories-list dropdownItems">
+
+                                                <li>chain</li>
+                                                <li>watch</li>
+                                                <li>ring</li>
+                                                <li>bracelet</li>
+                                                <li>necklaces</li>
+                                                <li>braclets</li>
+                                                
+
+                                            </ul>
+
+
+                                        </div>
+    
+                                    
+
+                                            
+                                        
+
+                                    </div>
+
+                                </ul>   
+
+
+                                    <!-- SPORT-SECTION -->
+                                <ul class="sport-section topicHeader">
+
+                                
+                                        <a href="javascript:void(0)" class="collection-head click">
+
+                                            <span class="head-name relative">Sport
+                                                    <span class="new">New</span>
+                                            </span>
+                                        
+                                            <ion-icon name="caret-forward-outline" class="icon-flex"></ion-icon>
+                                        </a>
+
+
+                                    <div class="sport-list collection order-list">
+
+                                        <div class="sport-colthing">
+                                            <h3 class="dropdownTitle">Sport wears</h3>
+
+                                            <ul class="sport-listing dropdownItems">
+
+                                                <li>joggers</li>
+                                                <li>tracksuit</li>
+                                                <li>leggings</li>
+                                                <li>sport jacket</li>
+                                                <li>shorts</li>
+                                                <li>sports bra</li>
+
+                                            </ul>
+                                        </div>
+
+                                        <div class="Sport-accersories">
+
+                                            <h3 class="dropdownTitle">sport equipments</h3>
+
+                                            <ul class="sportaccersories-list dropdownItems">
+
+                                                <li>socks</li>
+                                                <li>armbands</li>
+                                                <li>sport watches</li>
+                                                <li>caps</li>
+                                                <li>gym bag</li>
+                                                <li>water bottle</li>
+                                                
+
+                                            </ul>
+
+
+                                        </div>
+
+                                        <div class="sport footwear">
+
+                                            <h3 class="dropdownTitle">sport footwear</h3>
+
+                                            <ul class="sportfootwear-list dropdownItems">
+
+                                                <li>runing shoes</li>
+                                                <li>basketball sheos</li>
+                                                <li>soccer cleats</li>
+                                                <li>tennis sheo</li>
+                                                <li>slides</li>
+                                                <li>training sheo</li>
+                                                
+
+                                            </ul>
+
+
+                                        </div>
+
+                                    </div>
+
+                                </ul>  
+
+                               </div>
+
+                            </div>    
+
+
+                              <!-- cart-outline ICON -->
+
+                                <div class="cart-container">
+                               <div class="cart-space">
+                                   <ion-icon name="cart-outline" class="cart-btn"></ion-icon>
+                                   <span class="count"><h2>0</h2></span>
+                               </div>
+                                <div class="heart-outline-space close-btn">
+                                    <ion-icon name="heart-outline" class="heart-outline-btn"></ion-icon>
+                                    <span><h2>0</h2></span>
+                                </div>
+                                <div class="cart-outline-price">cart</div>
+                                </div>
+
+    
+
+                               </div>
+
+                        </div>
+
+                </div>
+                    
+
+                        <!-- MOBILE MENU -->
+                <div class="mobile-menu">
+                        
+                            <div class="icon-list">
+                                <a href="/index.html"><ion-icon name="home-outline" class="house-btn btn-icon"></ion-icon></a>
+                                <a href="/profile.html"><ion-icon name="person-outline" class="person-btn btn-icon"></ion-icon></a>
+                                <a href="/search/search.html"><ion-icon name="search-outline" class="search-btn btn-icon"></ion-icon></a>
+                                <a href="/wishlist/wishlist.html"><ion-icon name="heart-outline" class="love-btn btn-icon"></ion-icon>  </a>                    
+                            </div>
+
+                </div>  
+    
+            </div>
+
+
+                <!--HEADER BOTTOM -->
+            <div class="section">
+
+                <div class="header-bottom">
+
+
+                    <!-- DEPARTMENT -->
+                    <div class="department">
+
+                        <h4>All departments</h4>
+
+                        <div class="department-menu">
+                            <ul class="department-list">
+
+                                <li class="beauty-flex dept">
+
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="woman" class="icon-large"></ion-icon>
+                                         <span class="label">Beauty</span>
+                                        <ion-icon class="icon-small" name="caret-forward-outline"></ion-icon>
+                                    </a>
+
+                                     <ul class="beauty-list list">
+                                        <li>skin care</li>
+                                        <li>makeup</li>
+                                        <li>hair care</li>
+                                        <li>fragrancs</li>
+                                        <li>nails</li>
+                                        <li>bath & body</li>
+                                        <li>organin product</li>
+                                        <li>facial rollers</li>
+                                     </ul>
+
+                                </li>
+
+                                <li class="electronic-dept dept">
+
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="bluetooth"  class="icon-large"></ion-icon>
+                                        <span class="label">Electronics</span>
+                                        <ion-icon name="caret-forward-outline"  class="icon-small"></ion-icon>
+                                    </a>
+
+                                        <ul class="electronic-list list">
+                                            <li>computer</li>
+                                            <li>camera</li>
+                                            <li>television</li>
+                                            <li>smart phone</li>
+                                            <li>Home audio</li>
+                                            <li>gaming</li>
+                                            <li>smart watch</li>
+                                        </ul>
+
+                                </li>
+
+                                <li class="girl-fashion-flex dept">
+
+                                    <a href="javascript:void(0)" class="dept-head">
+                                       <ion-icon name="shirt" class="icon-large"></ion-icon>
+                                          <span class="label">girl fashion</span>
+                                        <ion-icon name="caret-forward-outline" class="icon-small"></ion-icon>
+                                    </a>
+
+                                     <ul class="girl-fasion list">
+                                            <li>sheo</li>
+                                            <li>clothes</li>
+                                            <li>jewelry</li>
+                                            <li>bags</li>
+                                            <li>accessories</li>
+                                            <li>watches</li>
+                                            <li>rings</li>
+                                        </ul>
+
+                                </li>
+
+                                <li class="boy-fashion-flex dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="watch" class="icon-large"></ion-icon>
+                                        <span class="label">boy fashion</span>
+                                    </a>
+                                </li>
+
+                                <li class="home-kitchen dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="home" class="icon-large"></ion-icon>
+                                         <span class="label">Home & Kitchen</span>
+                                    </a>
+                                </li>
+
+                                 <li class="health-flex dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="medkit" class="icon-large"></ion-icon>
+                                         <span class="label">health & accersories</span>
+                                    </a>
+                                </li>
+
+                                 <li class="pet-flex dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="bug" class="icon-large"></ion-icon>
+                                        <span class="label"> pet supplier</span>
+                                    </a>
+                                </li>
+
+                                 <li class="best-seller dept">
+                                    <a href="javascript:void(0)" class="dept-head">
+                                        <ion-icon name="location" class="icon-large"></ion-icon>
+                                         <span class="label">Best seller</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+
+
+                    <!-- SEARCH BAR -->
+                    <div class="search-bar">
+                        <input type="text" placeholder="search for photos">
+                        <ion-icon name="search" class="search-btn"></ion-icon>
+                        <span>search</span>
+                    </div>
+
+                </div>
+    
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <div class="main-container">
+
+            <div class="main-head">
+
+               <div class="head-label">
+
+                 <h3>Welcome, <span>Sign-up</span></h3>
+                 <p>already have an account <span> log in</span></p>
+
+                </div> 
+
+            </div>
+
+            <div class="main-body">
+
+                <h4>My easiBuy Account</h4>
+
+                <div class="body-list">
+
+                    <div class="label">
+                        <h5>order</h5>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+                     <div class="label">
+                        <h5>inbox</h5>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+                     <div class="label">
+                        <h5>followed seller</h5>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+                     <div class="label">
+                        <h5>selling</h5>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+                     <div class="label">
+                        <h5>pending reviews</h5>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+                     <div class="label">
+                        <h5>voucher</h5>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+                     <div class="label">
+                        <h5>wishlist</h5>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+                     <div class="label">
+                        <h5>settings</h5>
+                        <ion-icon name="caret-forward-outline"></ion-icon>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </main>
+
+
+
+        
+    <!-- JAVASCRIPT LINK -->
+ <script src="easibuy.js"></script> 
+ 
+    <!-- ION-ICON LINK -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>
