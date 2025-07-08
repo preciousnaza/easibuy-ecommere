@@ -20,13 +20,13 @@ Technologies Used:
 - CSS
 - JavaScript (Vanilla)
 
-  how to Run Locally
+how to Run Locally
   1. clone this repository:
     https://github.com/preciousnaza/easibuy-ecommere.git
   2. open the folder and double click index.html
  
 
-  Author: Onyejekwe Chinaza
-  GitHub-Link: https://github.com/preciousnaza
-  Email: onyejekwechinaza016@gmail.com
+ Author: Onyejekwe Chinaza
+ GitHub-Link: https://github.com/preciousnaza
+ Email: onyejekwechinaza016@gmail.com
   
